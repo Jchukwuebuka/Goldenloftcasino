@@ -1,0 +1,391 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  p {
+      font-family: Archivo;
+  }
+
+  small {
+      font-family: Archivo;
+  }
+  
+  select {
+      background: #2C724F;
+      font-size: 14px;
+      color: #ffffff !important;
+      font-family: "Ebrima";
+      height: 50px;
+      padding: 0 35px 0 15px;
+      font-weight: normal;
+      border: none;
+      width: 100%;
+  }
+  
+  select:active, 
+  select:focus{ border-radius:0;}
+  z
+  select option{-webkit-box-shadow: inset 0px 0px 0px 200px rgba(217,63,135,1);
+  -moz-box-shadow: inset 0px 0px 0px 200px rgba(217,63,135,1);
+  box-shadow: inset 0px 0px 0px 200px rgba(217,63,135,1); 
+  background-color: #4500bb; padding: 5px 15px; -moz-padding:5px 15px; -webkit-padding:5px 15px; color:#fff !important;}
+  
+  select option:hover{-webkit-box-shadow: inset 0px 0px 0px 200px rgba(68,49,141,1);
+  -moz-box-shadow: inset 0px 0px 0px 200px rgba(68,49,141,1);
+  box-shadow: inset 0px 0px 0px 200px rgba(68,49,141,1); background:#5b3010;}
+  
+  .goog-te-gadget-simple  {
+    background-color: #2C724F;!important;
+    color: #fff;
+    padding: 8px!important;
+    font-size: 1rem!important;
+    line-height:1rem!important;
+    cursor: pointer;
+    zoom: 1;
+  }
+  
+  .goog-te-menu-value {
+    color: #fff !important;
+      font-family: 'Material Icons';
+      font-size: 15px;
+      vertical-align: -10px;
+  }
+  
+  .sidenav_pc {
+    height: 100%;
+    width: 170px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2C724F;
+    overflow-x: hidden;
+    border-right: 1px solid #fff;
+    padding-top: 40px;
+  }
+  
+  .sidenav_pc a {
+    padding: 16px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #cacaca;
+    display: block;
+    transition: 0.3s;
+    font-family: Archivo;
+  }
+  
+  .sidenav_pc a:hover {
+    color: #f1f1f1;
+    background-color: #2f353f4b;
+  }
+  
+  .sidenav_pc h5{
+      font-family: Audiowide;
+      color: #fff;
+  }
+  
+  .sidenav_pc p {
+      font-family: Audiowide;
+      color: #fff;
+      border-bottom: 2px inset #fff;
+      margin: 0px 20px;
+  }
+  
+  
+  .pc_main {
+    margin-left: 170px; /* Same as the width of the sidenav */
+    font-size: 14px; /* Increased text to enable scrolling */
+    padding: 0px 0px;
+  }
+
+  
+  .pc_main .card_pc {
+      border-radius: 10px;
+      padding: 10px 25px;
+      box-shadow: 3px 5px #2C724F;
+      border: 1px inset #2C724F;
+  }
+  
+  
+  .pc_main .card_pc_2 {
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 3px 5px #2C724F;
+      border: 1px inset #2C724F;
+  }
+  
+  .pc_main .card_pc_2 .row p {
+      font-weight: 400;
+  }
+  
+  
+  
+  
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: #2C724F;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+  }
+  
+  .sidenav a {
+    padding: 16px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-family: Archivo;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    background-color: #2f353f4b;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .sidenav h5{
+      font-family: Audiowide;
+      color: #fff;
+  }
+  
+  .sidenav p {
+      font-family: Audiowide;
+      color: #fff;
+      border-bottom: 2px inset #fff;
+      margin: 0px 20px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  .mobile_nav {
+      background-color: #188170;
+  }
+  
+  
+  .mobile_main .card_mobile {
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 3px 5px #2C724F;
+      border: 1px inset #2C724F;
+  }
+  
+  
+  .mobile_main .card_mobile_2 {
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 3px 5px #2C724F;
+      border: 1px inset #2C724F;
+  }
+  
+  .mobile_main .card_mobile_2 .row p {
+      font-weight: 400;
+  }
+  
+  
+  .deposit ul li {
+      color: #444;
+      padding: 15px 0px;
+  }
+  
+  .deposit h6 {
+      color: #222;
+      font-family: Audiowide;
+  }
+  
+  .deposit .btn_deposit_copy {
+      border-radius: 50px;
+      background-color: #2C724F;
+      color: #fff;
+      padding: 11px 26px;
+  }
+  
+.card_pc .text_1 {
+  color: #2C724F;
+  font-family: Archivo;
+  text-transform: capitalize;
+}
+
+.card_pc .text_1 span {
+  color: #2C724F;
+  font-family: Archivo;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.card_pc .text_2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+}
+
+
+.card_pc .custombtn {
+  padding: 5px 25px;
+  background-color: #2C724F;
+  color: white;
+  transition: 0.5s;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.card_pc .custombtn:hover {
+  border: 1px solid #2C724F;
+  border-radius: 50px;
+  color: #2C724F;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.pc_main .sub_card {
+  box-shadow: 3px 5px #2C724F;
+  border: 1px inset #2C724F;
+  border-radius: 10px;
+  padding: 5px 20px;
+  transition: 0.5s;
+}
+
+.pc_main .sub_card:hover {
+  background-color: #2C724F;
+  padding: 5px 20px;
+  transition: 0.5s;
+}
+
+.pc_main .sub_card:hover :nth-child(1){
+  color: #fff;
+}
+
+.pc_main .sub_card:hover :nth-child(2){
+  color: #fff;
+}
+
+.pc_main .sub_card:hover i:nth-child(2){
+  color: #2C724F;
+}
+
+.pc_main .sub_card .sub_text h6 {
+  font-family: Archivo;
+  color: #666;
+}
+
+.pc_main .sub_card .sub_text h3 {
+  font-family: Archivo;
+  color: #2C724F;
+  font-weight: 800;
+}
+
+.pc_main .sub_card .icon1 {
+  color: #2C724F;
+}
+
+.pc_main .sub_card .icon {
+  color: #fff;
+}
+
+.acct_sub .custombtn {
+  padding: 5px 25px;
+  background-color: #2C724F;
+  margin-top: 25px;
+}
+
+
+/*********Mobile Profile **************/
+
+  
+.card_mobile .text_1 {
+  color: #2C724F;
+  font-family: Archivo;
+  text-transform: capitalize;
+}
+
+.card_mobile .text_1 span {
+  color: #2C724F;
+  font-family: Archivo;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.card_mobile .text_2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+}
+
+
+.card_mobile .custombtn {
+  padding: 5px 25px;
+  background-color: #2C724F;
+  color: white;
+  transition: 0.5s;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.card_mobile .custombtn:hover {
+  border: 1px solid #2C724F;
+  border-radius: 50px;
+  color: #2C724F;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.mobile_main .sub_card {
+  box-shadow: 3px 5px #2C724F;
+  border: 1px inset #2C724F;
+  border-radius: 10px;
+  padding: 5px 20px;
+  transition: 0.5s;
+  margin-top: 50px;
+}
+
+.mobile_main .sub_card:hover {
+  background-color: #2C724F;
+  padding: 5px 20px;
+  transition: 0.5s;
+}
+
+.mobile_main .sub_card:hover :nth-child(1){
+  color: #fff;
+}
+
+.mobile_main .sub_card:hover :nth-child(2){
+  color: #fff;
+}
+
+.mobile_main .sub_card:hover i:nth-child(2){
+  color: #2C724F;
+}
+
+.mobile_main .sub_card .sub_text h6 {
+  font-family: Archivo;
+  color: #666;
+}
+
+.mobile_main .sub_card .sub_text h3 {
+  font-family: Archivo;
+  color: #2C724F;
+  font-weight: 800;
+}
+
+.mobile_main .sub_card .icon1 {
+  color: #2C724F;
+}
+
+.mobile_main .sub_card .icon {
+  color: #fff;
+}

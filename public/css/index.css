@@ -1,0 +1,1134 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(/image/background_1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14PX;
+}
+
+.reveal {
+position: relative;
+transform: translateY(120px);
+opacity: 0;
+transition: all 1s ease;
+}
+
+.reveal.active {
+transform: translateY(0px);
+opacity: 1;
+}
+
+.menubtn {
+  display: inline;
+  cursor: pointer;
+  float: right;
+  padding-top: 5px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 2px;
+  background-color: #fcfcfc;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 8px) rotate(-45deg);
+  background-color: #dfbd00;
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -8px) rotate(45deg);
+  background-color: #dfbd00;
+}
+
+.sidenav {
+  height: 100%;
+  width: 80%;
+  position: fixed;
+  z-index: 9999;
+  top: 61px;
+  right: 0;background-image: url(/image/background_1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  transition: transform .2s; /* Animation */
+  padding-top: 10px;
+  display: none;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 13px;
+  font-family: Amiko;
+  margin-left: 15px;
+  padding: 8px 10px 8px 10px;
+  color: #555;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #AB2F44;
+  background-color: #2f353f4b;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.navbar_pc li .pc_a {
+  font-family: "Amiko";
+  color: #fff;
+  margin-top: 0px;
+  padding: 10px 16px;
+  font-weight: 200;
+  transition: 0.4s;
+  font-size: 11px;
+  margin-top: 6px;
+}
+
+.navbar_pc li .pc_a:hover {
+  color: #dfbd00;
+  font-weight: 500;
+  transition: 0.4s;
+}
+
+.index_header_pc h4 {
+  text-align: center;
+  color: #fff;
+  font-size: 26px;
+  font-family: Amiko;
+}
+
+.index_header_pc h1 {
+  text-align: center;
+  color: #dfbd00;
+  font-size: 80px;
+  font-family: Amiko;
+}
+
+.index_header_pc h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  font-family: Amiko;
+  padding-top: 20px;
+}
+
+
+.index_header_mobile h4 {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: Amiko;
+}
+
+.index_header_mobile h1 {
+  text-align: center;
+  color: #dfbd00;
+  font-size: 40px;
+  font-family: Amiko;
+}
+
+.index_header_mobile h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-family: Amiko;
+  padding-top: 20px;
+}
+
+/**********
+.pc_first_slide {
+  background-image: url(/image/aroulette.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.pc_first_slid_mask {
+  background-color: rgba(0, 0, 0, 0.123);
+  height: 600px;
+}
+
+.pc_second_slid {
+  background-image: url(/image/banner-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.pc_second_slid_mask {
+  background-color: rgba(0, 0, 0, 0.548);
+  height: 600px;
+}
+
+.pc_second_slid .pc_second_slid_mask h1 {
+  font-family: Archivo;
+  color: #ffffff;
+  text-align: right;
+  font-size: 55px;
+  padding-top: 10px;
+}
+
+.pc_second_slid .pc_second_slid_mask p {
+  font-family: Archivo;
+  color: #fcfcfc;
+  text-align: right;
+}
+
+.pc_second_slid .pc_second_slid_mask h2 {
+  font-family: Amiko;
+  color: #fcfcfc;
+  text-align: right;
+  font-size: 35px;
+  padding-top: 11px;
+}
+
+.pc_third_slide {
+  background-image: url(/image/blackjack.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.pc_third_slide_mask {
+  background-color: rgba(0, 0, 0, 0.13);
+  height: 600px;
+}
+
+.pc_fourth_slide {
+  background-image: url(/image/caribbean.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.pc_fourth_slide_mask {
+  background-color: rgba(0, 0, 0, 0.13);
+  height: 600px;
+}
+
+
+.first_slide {
+  background-image: url(/image/banner-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.first_slide_mask {
+  background-color: rgba(0, 0, 0, 0.548);
+  height: 400px;
+}
+
+.first_slide .first_slide_mask h1 {
+  font-family: Archivo;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  padding-top: 10px;
+}
+
+.first_slide .first_slide_mask h3 {
+  font-family: Amiko;
+  color: #fcfcfc;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.first_slide .first_slide_mask h2 {
+  font-family: Amiko;
+  color: #fcfcfc;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 48px;
+}
+
+.slide2 {
+  background-image: url(/image/bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.slid2_mask {
+  background-color: rgba(0, 0, 0, 0.363);
+  height: 400px;
+}
+
+.third_slide {
+  background-image: url(/image/aroulette.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.third_slide_mask {
+  background-color: rgba(0, 0, 0, 0.13);
+  height: 400px;
+}
+
+.fourth_slide {
+  background-image: url(/image/caribbean.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.fourth_slide_mask {
+  background-color: rgba(0, 0, 0, 0.13);
+  height: 400px;
+}
+****/
+
+
+.pc_body1 {
+  background-image: url(/image/background_1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+.pc_body1 h1 {
+  text-align: center;
+  font-family: Amiko;
+  color: #AB2F44;
+  font-size: 55px;
+}
+
+@media screen and (max-width: 600px) {
+  .pc_body1 h1 {
+      text-align: center;
+      font-family: Amiko;
+      color: #AB2F44;
+      font-size: 25px;
+  }
+}
+
+.pc_body1 p {
+  text-align: center;
+  font-family: Amiko;
+  color: #343840;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .pc_body1 p {
+      text-align: left;
+      font-family: Amiko;
+      color: #343840;
+      padding-top: 20px;
+      font-size: 13px;
+      text-align: justify;
+  }
+}
+
+.pc_body1 .sub_body1 {
+  background-color: #AB2F44;
+  padding: 30px 40px;
+}
+
+.pc_body1 .sub_body1 h3 {
+  color: #dfbd00;
+  text-align: center;
+}
+
+.pc_game_type1 .image1 {
+  background-image: url(/image/roulette.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 350px;
+}
+
+.pc_game_type1 .text H4 {
+  text-align: left;
+  font-family: Amiko;
+  color: #dfbd00;
+  font-weight: 900;
+  padding-top: 28px;
+}
+.pc_game_type1 .text p {
+  text-align: left;
+  color: #fff;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.pc_game_type2 .image2 {
+  background-image: url(/image/Baccarat.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 350px;
+}
+
+.pc_game_type2 .text2 H4 {
+  text-align: left;
+  font-family: Amiko;
+  color: #dfbd00;
+  font-weight: 900;
+  padding-top: 28px;
+}
+.pc_game_type2 .text2 p {
+  text-align: left;
+  color: #fff;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.pc_game_type3 .image3 {
+  background-image: url(/image/poker.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 350px;
+}
+
+.pc_game_type3 .text3 H4 {
+  text-align: left;
+  font-family: Amiko;
+  color: #dfbd00;
+  font-weight: 900;
+  padding-top: 28px;
+}
+.pc_game_type3 .text3 p {
+  text-align: left;
+  color: #fff;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.pc_game_type4 .image4 {
+  background-image: url(/image/slot1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 350px;
+}
+
+.pc_game_type4 .text4 H4 {
+  text-align: left;
+  font-family: Amiko;
+  color: #dfbd00;
+  font-weight: 900;
+  padding-top: 28px;
+}
+.pc_game_type4 .text4 p {
+  text-align: left;
+  color: #fff;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+
+
+.sub_body_mb {
+  background-color: #AB2F44;
+}
+
+.sub_body_mb h3 {
+  color: #dfbd00;
+  text-align: center;
+}
+
+.mb_game_type1 .image1 {
+  background-image: url(/image/roulette.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+}
+
+.mb_game_type1 .text H4 {
+  text-align: left;
+  font-family: Amiko;
+  color: #dfbd00;
+  font-weight: 900;
+  padding-top: 28px;
+}
+
+.mb_game_type1 .text p {
+  text-align: left;
+  color: #fff;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.mb_game_type2 .image2 {
+  background-image: url(/image/Baccarat.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+}
+
+.mb_game_type2 .text2 H4 {
+  text-align: left;
+  font-family: Amiko;
+  color: #dfbd00;
+  font-weight: 900;
+  padding-top: 28px;
+}
+.mb_game_type2 .text2 p {
+  text-align: left;
+  color: #fff;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.mb_game_type3 .image3 {
+  background-image: url(/image/poker.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+}
+
+.mb_game_type3 .text3 H4 {
+  text-align: left;
+  font-family: Amiko;
+  color: #dfbd00;
+  font-weight: 900;
+  padding-top: 28px;
+}
+.mb_game_type3 .text3 p {
+  text-align: left;
+  color: #fff;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.mb_game_type4 .image4 {
+  background-image: url(/image/slot1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+}
+
+.mb_game_type4 .text4 H4 {
+  text-align: left;
+  font-family: Amiko;
+  color: #dfbd00;
+  font-weight: 900;
+  padding-top: 28px;
+}
+.mb_game_type4 .text4 p {
+  text-align: left;
+  color: #fff;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+
+.body_2 .body_2_image {
+  background-image: url(/image/background_3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 434px;
+  /**filter: blur(6px);
+  -webkit-filter: blur(6px);***/
+}
+
+.body_2 .body_2_image_mask {
+  background-color: rgba(0, 0, 0, 0.555);
+  height: 434px;
+}
+
+.body_2 .text .card {
+  position: absolute;
+  z-index: 99;
+  left: -90px;
+  top: 30px;
+  overflow: hidden;
+}
+
+.body_2 .text .card:hover {
+  background-color: #AB2F44;
+  color: #fff;
+}
+
+.body_2 .text .card h3 {
+  text-transform: capitalize;
+  font-weight: 900;
+  font-family: Amiko;
+}
+
+.body_2 .text .card ul li b {
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.body_2 .text .card ul li {
+  font-size: 14px;
+  padding-top: 10px;
+  list-style: circle;
+  font-family: Amiko;
+}
+
+.body_2 .text .card .btn {
+  border-radius: 50px;
+  padding: 5px 30px;
+  background-color: #AB2F44;
+  color: #fcfcfc;
+  margin-top: 12px;
+  font-size: 10px;
+  font-family: Archivo;
+  transition: 0.3s;
+}
+
+.body_2 .text .card .btn:hover {
+  border-radius: 0px;
+  padding: 5px 30px;
+  background-color: #fff;
+  color: #AB2F44;
+  transition: 0.3s;
+}
+
+
+.body_2_mb h3 {
+  color: #dfbd00;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-family: Amiko;
+}
+
+.body_2_mb ul li b {
+  color: #333;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.body_2_mb ul li {
+  color: #555;
+  font-size: 14px;
+  padding-top: 10px;
+  list-style: circle;
+  font-family: Amiko;
+}
+
+.body_2_mb .btn {
+  padding: 10px 30px;
+  border: 1px solid #dfbd00;
+  color: #dfbd00;
+  margin-top: 6px;
+  font-size: 10px;
+  font-family: Archivo;
+  transition: 0.3s;
+}
+
+.body_2_mb  .btn:hover {
+  padding: 10px 30px;
+  border: 1px solid #AB2F44;
+  color: #AB2F44;
+  transition: 0.3s;
+}
+
+
+.banner4 .ban4 {
+    cursor: pointer;
+    background-color: #00000091;
+    height: 750px;
+    color: #fff;
+    padding-top: 80px;
+    transition: transform .2s; /* Animation */
+}
+
+.banner4 .ban4:hover {
+  height: 750px;
+  color: #dfbd00;
+  transform: scale(1.1);
+  overflow-x: hidden;
+}
+
+.banner4 h2 {
+  text-align: left;
+  font-family: Amiko;
+}
+
+.banner4 h6 {
+  text-align: left;
+  font-family: Amiko;
+  padding-top: 20px;
+}
+
+.banner4 p {
+  color: #fff;
+  text-align: left;
+  font-family: Amiko;
+  padding-top: 15px;
+  font-size: 13px;
+}
+
+.banner4 ul li {
+  padding-top: 15px;
+}
+
+.banner4 ul li  a {
+  color: #fff;
+  font-family: Amiko;
+  font-size: 13px;
+}
+
+.banner4 ul li  a:hover {
+  color: #dfbd00;
+  font-family: Amiko;
+  font-size: 14px;
+}
+
+
+@media only screen and (max-width: 700px) {
+.banner4 .ban4 .h1_big {
+  text-align: center;
+}
+}
+
+.banner3 .img {
+  width: 95%;
+  height: 190px;
+  position: relative;
+  z-index: 9;
+  right: -50px;
+}
+
+.banner3 .sec_col {
+  background-image: url(/image/background_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: auto;
+  padding-left: 90px;
+}
+
+.banner3 .sec_col h4 {
+  font-family: Amiko;
+  color: #dfbd00;
+  border-bottom: 1px solid #dfbd00;
+}
+
+.banner3 h1 {
+  text-align: left;
+  font-weight: 900;
+  font-family: Amiko;
+  color: #AB2F44;
+  font-size: 60px;
+  padding-top: 30px;
+}
+
+.banner3 .sec_col  p {
+  font-family: Amiko;
+  font-size: 14px;
+  color: #222;
+  padding-top: 10px;
+}
+
+.banner3 .sec_col  ul li {
+  font-family: Amiko;
+  font-size: 14px;
+  color: #222;
+  padding-top: 6px;
+}
+
+.banner3 .sec_col .btn {
+  padding: 10px 30px;
+  border: 1px solid #333;
+  color: #333;
+  margin-top: 6px;
+  font-size: 10px;
+  font-family: Archivo;
+  transition: 0.3s;
+}
+
+.banner3 .sec_col .btn:hover {
+  padding: 10px 30px;
+  border: 1px solid #AB2F44;
+  color: #AB2F44;
+  transition: 0.3s;
+}
+
+
+.banner3_mb .card {
+  margin-top: 50px;
+}
+
+.banner3_mb h4 {
+  text-align: center;
+  font-family: Amiko;
+  color: #AB2F44;
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+.banner3_mb .card .card_header1 {
+  background-image: url(/image/roulette.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 250px;
+}
+
+.banner3_mb .card .card_header2 {
+  background-image: url(/image/Baccarat.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 250px;
+}
+
+.banner3_mb .card .card_header3 {
+  background-image: url(/image/games/fishmachine.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 250px;
+}
+
+.banner3_mb .card .card_header4 {
+  background-image: url(/image/poker.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 250px;
+}
+
+.banner3_mb .card .card_header5 {
+  background-image: url(/image/slot1.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 250px;
+}
+
+.banner3_mb .card .card_header6 {
+  background-image: url(/image/games/Bingo1.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 250px;
+}
+
+.banner3_mb .card .card_body h5 {
+  color: #dfbd00;
+  font-family: Amiko;
+}
+
+.banner3_mb .card .card_body p {
+  color: #333;
+  font-family: Amiko;
+  font-size: 13px;
+  padding-top: 15px;
+}
+
+.banner3_mb .card .card_body  ul li {
+  font-family: Amiko;
+  font-size: 14px;
+  color: #222;
+  padding-top: 6px;
+}
+
+.banner3_mb .card .card_body .btn {
+  padding: 10px 30px;
+  border: 1px solid #333;
+  color: #333;
+  margin-top: 6px;
+  font-size: 10px;
+  font-family: Archivo;
+  transition: 0.3s;
+}
+
+.banner3_mb .card .card_body .btn:hover {
+  padding: 10px 30px;
+  border: 1px solid #AB2F44;
+  color: #AB2F44;
+  transition: 0.3s;
+}
+
+
+.banner5 {
+  background-image: url(/image/background_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+
+.banner5 .card .header1 {
+  background-image: url(/image/b.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 9;
+  top: -50px;
+  width: 90%;
+  height: 250px;
+}
+
+.banner5 .card .header2 {
+  background-image: url(/image/Bar/bar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 9;
+  top: -50px;
+  width: 90%;
+  height: 250px;
+}
+
+.banner5 .card .card_body h4 {
+  font-family: Amiko;
+  color: #dfbd00;
+  border-bottom: 1px solid #dfbd00;
+}
+
+.banner5 h1 {
+  text-align: left;
+  font-family: Amiko;
+  color: #AB2F44;
+  font-size: 45px;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .banner5 h1 {
+    text-align: left;
+    font-family: Amiko;
+    color: #AB2F44;
+    font-size: 28px;
+    padding-top: 30px;
+  }
+}
+
+
+.banner5 .card .card_body p {
+  color: #333;
+  font-family: Amiko;
+  font-size: 13px;
+  padding-top: 15px;
+}
+
+.contact_col {
+  background-color: #AB2F44;
+  width: 70%;
+  position: relative;
+  z-index: 1;
+  top: 80px;
+  height: 180px;
+}
+
+.contact_col .sub_1 h5 {
+  font-family: Amiko;
+  color: #fcfcfc;
+}
+
+.contact_col .sub_1 p {
+  color: #dfbd00;
+  font-family: Amiko;
+  font-size: 13px;
+}
+
+.contact_col .sub_2 p {
+  color: #dfbd00;
+  font-family: Amiko;
+  font-size: 13px;
+}
+
+.contact_col .sub_2 .email {
+  font-family: Amiko;
+  color: #fcfcfc;
+  font-size: 13px;
+}
+
+.contact_col .sub_2 .phone {
+  font-family: Amiko;
+  color: #fcfcfc;
+  font-size: 13px;
+}
+
+.footer_pc {
+  background-image: url(/image/background_1.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: auto;
+  padding-top: 90px;
+  padding-bottom: 25px;
+  border-top: 1px solid #dfbd00;
+}
+
+@media screen and (max-width: 600px) {
+  .footer_pc {
+      background-image: url(/image/background_1.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: auto;
+      padding-top: 30px;
+      padding-bottom: 25px;
+  }
+}
+
+
+.footer_pc .foot1 .btn {
+  padding: 8px 40px;
+  background-color: #AB2F44;
+  color: #fcfcfc;
+  margin-top: 35px;
+  font-size: 10px;
+  font-family: Archivo;
+  transition: 0.3s;
+}
+
+.footer_pc .foot1 .btn:hover {
+  padding: 8px 40px;
+  background-color: #dfbd00;
+  color: #AB2F44;
+  transition: 0.3s;
+}
+
+.footer_pc .foot2 h5 {
+  color: #AB2F44;
+  text-transform: capitalize;
+  padding-top: 35px;
+}
+
+
+.footer_pc .foot2 .games .gm {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 11px;
+  display: block;
+  padding-top: 16px;
+}
+
+.footer_pc .foot2 .games .gm:hover {
+  font-size: 11px;
+  color: #dfbd00;
+  text-transform: uppercase;
+}
+
+
+.footer_pc .foot2 .social .fad {
+  font-size: 15px;
+}
+
+.footer_pc .foot2 .social .fb {
+  font-size: 12px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.footer_pc .foot2 .social .fb:hover {
+  font-size: 12px;
+  color: #dfbd00;
+  text-transform: uppercase;
+}
+
+.footer_pc .mobile_contact h6 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #dd4b39;
+}
+
+.footer_pc .mobile_contact p {
+  font-size: 13px;
+  color: #444;
+}
+
+.footer2 {
+  background-color: #AB2F44;
+}
+
+.footer2 p {
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 6px 8px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.insta {
+  background: #8b00b5;
+  color: white;
+}
+
+.youtube {
+  background: #20c511;
+  color: white;
+}
